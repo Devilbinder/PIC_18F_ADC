@@ -3,6 +3,8 @@ This demonstrates how to setup the Analog to Digital Converter. Display the valu
 
 [![PIC Programming Tutorial #8 - Analog to Digital Converter (ADC)](https://img.youtube.com/vi/yFvJXxaY4O0/0.jpg)](https://www.youtube.com/watch?v=yFvJXxaY4O0 "PIC Programming Tutorial #8 - Analog to Digital Converter (ADC)")
 
+[![PIC Programming Tutorial #13 - Debugging and Using the Simulator](https://img.youtube.com/vi/O4IpwgWhqLY/0.jpg)](https://www.youtube.com/watch?v=O4IpwgWhqLY "PIC Programming Tutorial #13 - Debugging and Using the Simulator")
+
 <a href="https://amzn.to/2CzX8Wc">FTDI USB to Serial</a>
 
 <a href="https://amzn.to/2pTpm5W">Variable Resistors (Pot)</a>
