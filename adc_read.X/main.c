@@ -54,7 +54,7 @@ void main(void) {
         
         adc_to_led = (ADRESH << 6) | (ADRESL >> 2);
         LATB = adc_to_led;
-        
+       
         adc_to_led = (ADRESH << 8) | (ADRESL);
         
         adc_volt = adc_to_led * ADC_RES;
