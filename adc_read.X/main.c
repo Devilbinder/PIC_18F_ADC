@@ -1,5 +1,5 @@
 #include <xc.h>
-#include <p18f4520.h>
+#include <pic18f4520.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -16,8 +16,8 @@ uint16_t adc_to_led = 0;
 
 float adc_volt = 0.0;
 
-void interrupt high_isr(void);
-void interrupt low_priority low_isr(void);
+void __interrupt() high_isr(void);
+void __interrupt(low_priority) low_isr(void);
 
 void main(void) {
 
@@ -64,7 +64,7 @@ void main(void) {
     } 
 }
 
-void interrupt high_isr(void){
+void __interrupt() high_isr(void){
     INTCONbits.GIEH = 0;
     if(PIR1bits.RCIF){
         uart_receiver(&data,&got_data_bool);
@@ -74,7 +74,7 @@ void interrupt high_isr(void){
     INTCONbits.GIEH = 1;
 }
 
-void interrupt low_priority low_isr(void){
+void __interrupt(low_priority) low_isr(void){
     INTCONbits.GIEH = 0;
     
     INTCONbits.GIEH = 1;
